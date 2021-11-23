@@ -1,0 +1,11 @@
+version: "3.1"
+services:
+  app:
+    build:
+      context: .
+    container_name: vrgrapher
+    restart: always
+    volumes:
+      - ./:/usr/src/app
+    ports:
+      - "3000:8080"
